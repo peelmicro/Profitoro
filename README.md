@@ -1,5 +1,7 @@
 # profitoro-nuxt
 
+[![CircleCI](https://circleci.com/gh/peelmicro/Profitoro.svg?style=svg)](https://circleci.com/gh/peelmicro/Profitoro)
+
 > Profitoro Nuxt
 
 ## Build Setup
