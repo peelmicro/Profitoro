@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for pages/pomodoro.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">pages</a> pomodoro.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48.94% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>23/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">56.1% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div&gt;
+    &lt;header-component&gt;&lt;/header-component&gt;
+    &lt;div class="container min-full-height"&gt;
+      &lt;div class="main-content row"&gt;
+        &lt;div v-show="state !== 0" class="col-sm-12 col-md-6 col-lg-4"&gt;
+          &lt;div class="jumbotron <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >te</span>xt-center"&gt;<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span></span></span></span>
+            &lt;div class="container"&gt;
+              &lt;img class="img-fluid rounded" :src="chosenWorkout.picture" :alt="chosenWorkout.name"&gt;
+              &lt;h2&gt;{{ chosenWorkout.name }}&lt;/h2&gt;
+              &lt;p class="lead"&gt;
+                {{ chosenWorkout.description }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="countdown-holder col-sm-12" v-bind:class="[state !== 0 ? 'col-md-6 col-lg-8' : 'col-md-12']"&gt;
+          &lt;count-down-timer ref="countdowntimer" @finished="togglePomodoro" :time="time"&gt;&lt;/count-down-timer&gt;
+        &lt;/div&gt;<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer-component&gt;&lt;/footer-component&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import CountDownTimer from '~/components/timer/CountDownTimer'
+  import { HeaderComponent, FooterComponent } from '~/components/common'
+  import { mapGetters, mapActions } from 'vuex'
+  import { beep } from '~/utils/utils'
+&nbsp;
+  const STATE = {
+    WORKING: 0,
+    SHORT_BREAK: 1,
+    LONG_BREAK: 2
+  }
+  export default {
+    data () {
+      return {
+        state: STATE.WORKING,
+        pomodoros: 0,
+        source: require('~/assets/images/pushups.png'),
+        chosenWorkout: {name: '', description: '', picture: ''}
+      }
+    },
+    computed: {
+      ...mapGetters({
+        config: 'getConfig',
+<span class="branch-1 cbranch-no" title="branch not covered" >        totalPomodoros: 'getTotalPomodoros',</span>
+        wo<span class="cstat-no" title="statement not covered" >rkouts: 'getWorkouts'</span>
+      }),<span class="cstat-no" title="statement not covered" ></span>
+      ti<span class="branch-2 cbranch-no" title="branch not covered" >me () {</span>
+        le<span class="cstat-no" title="statement not covered" >t minutes</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="branch-3 cbranch-no" title="branch not covered" >        switch (this.state) {</span>
+<span class="cstat-no" title="statement not covered" >          case STATE.WORKING:</span>
+<span class="cstat-no" title="statement not covered" >            minut</span>es = this.config.workingPomodoro
+            break
+          case STATE.SHORT_BREAK:
+            minutes = this.config.shortBreak
+            break
+          case STATE.LONG_BREAK:
+            minutes = this.config.longBreak
+            break
+          default:
+            minutes = this.config.workingPomodoro
+            break
+        }
+<span class="fstat-no" title="function not covered" ></span>
+<span class="cstat-no" title="statement not covered" >        return minutes * 60</span>
+      }
+    },<span class="fstat-no" title="function not covered" ></span>
+    co<span class="cstat-no" title="statement not covered" >mponents: {</span>
+<span class="cstat-no" title="statement not covered" >      FooterComponent,</span>
+      HeaderComponent,
+      CountDownTimer
+    },<span class="cstat-no" title="statement not covered" ></span>
+    method<span class="cstat-no" title="statement not covered" >s: {</span>
+      ...m<span class="cstat-no" title="statement not covered" >apActions(['updateTotalPomodoros']),</span>
+      getR<span class="cstat-no" title="statement not covered" >andomWorkout () {</span>
+        re<span class="cstat-no" title="statement not covered" >turn this.workouts[Math.floor(Math.random() * this.workouts.length)]</span>
+      },<span class="cstat-no" title="statement not covered" ></span>
+      togglePomodoro () {
+        beep()
+        sw<span class="cstat-no" title="statement not covered" >itch (this.state) {</span>
+<span class="cstat-no" title="statement not covered" >          case ST</span>ATE.WORKING:
+            // we have switched to the break state, increase the number of pomodoros and choose between long and short break
+<span class="cstat-no" title="statement not covered" >            this.pomodoros++</span>
+            this.updateTotalPomodoros(this.totalPomodoros + 1)
+            this.state = this.pomodoros % this.config.pomodorosTillLongBreak === 0
+              ? STATE.LONG_BREAK : STATE.SHORT_BREAK
+            this.chosenWorkout = this.getRandomWorkout()
+            this.chosenWorkout.picture = this.chosenWorkout.pi<span class="branch-0 cbranch-no" title="branch not covered" >ctures &amp;&amp; this.chosenWo</span>rkout.pictures.length &amp;&amp; this.chosenWorkout.pictures[0]
+            break
+          default:
+            // time to work!
+            this.state = STATE.WORKING
+            break
+        }
+        this.$refs.countdow<span class="branch-1 cbranch-no" title="branch not covered" >nti</span>mer.start()
+      }
+    }
+  }
+&lt;/script&gt;
+&lt;style scoped lang="scss"&gt;
+  @import "../assets/styles/main";
+&lt;/style&gt;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 09 2017 12:24:14 GMT+0000 (GMT Standard Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>
